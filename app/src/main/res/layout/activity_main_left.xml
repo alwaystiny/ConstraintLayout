@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="25dp">
+
+    <include
+        layout="@layout/layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize" />
+
+    <ImageView
+        android:id="@+id/left"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_credit_card_black_24dp"
+        app:layout_constraintEnd_toStartOf="@+id/middle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="124dp" />
+
+    <ImageView
+        android:id="@+id/middle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_phone_android_black_24dp"
+        app:layout_constraintEnd_toStartOf="@+id/right"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/left"
+        tools:layout_editor_absoluteY="223dp" />
+
+    <ImageView
+        android:id="@+id/right"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_person_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/middle"
+        tools:layout_editor_absoluteY="223dp" />
+
+    <TextView
+        android:id="@+id/leftText"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:text="ID Card"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="@+id/left"
+        app:layout_constraintStart_toStartOf="@+id/left"
+        app:layout_constraintTop_toBottomOf="@+id/left" />
+
+    <TextView
+        android:id="@+id/middleText"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="100dp"
+        android:text="Smartphone"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/middle"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@+id/middle"
+        app:layout_constraintTop_toBottomOf="@+id/middle" />
+
+    <TextView
+        android:id="@+id/rightText"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="100dp"
+        android:text="Face"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/right"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="@+id/right"
+        app:layout_constraintTop_toBottomOf="@+id/right" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="this is amazing this is amazing  this is amazing this is amazing  this is amazing this is amazing  this is amazing this is amazing "
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</android.support.constraint.ConstraintLayout>
